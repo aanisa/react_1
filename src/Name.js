@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React;
+import ReactDOM;
 import logo from './logo.svg';
 import './App.css';
 
@@ -8,14 +9,12 @@ function formatName(user) {
 }
 
 const user = {
-  firstName: 'Harper',
-  lastName: 'Perez'
+  firstName: 'Raging',
+  lastName: 'River'
 };
 
 const element = (
-  <h1>
-    Hey there {formatName(user)}!
-  </h1>
+  <h1> Hey there {formatName(user)}! </h1>
 );
 
 ReactDOM.render(

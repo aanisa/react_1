@@ -2,6 +2,19 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+function formatName(user) {
+  return user.firstName + ' ' + user.lastName;
+}
+
+const user = {
+  firstName: 'Raging',
+  lastName: 'River'
+};
+
+const greeting = (
+  <h1> Hey there {formatName(user)}! </h1>
+);
+
 class App extends Component {
   render() {
     return (
@@ -13,6 +26,7 @@ class App extends Component {
         <p className="App-intro">
             All the things will be added here
         </p>
+        <p> {greeting} </p>
       </div>
     );
   }
