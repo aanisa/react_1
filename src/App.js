@@ -7,12 +7,15 @@ function formatName(user) {
 }
 
 const user = {
-  firstName: 'Raging',
-  lastName: 'River'
+  firstName: 'Enter',
+  lastName: 'Name'
 };
 
 const greeting = (
+  <div>
   <h1> Hey there {formatName(user)}! </h1>
+  <h2> The Time is {new Date().toLocaleTimeString()}.</h2>
+  </div>
 );
 
 class App extends Component {
